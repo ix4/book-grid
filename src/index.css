@@ -1,29 +1,33 @@
 html {
   font-family: Sans;
-  font-size: 0.7em;
+  font-size: 1em;
+  color: #f8f8f8;
 }
 
 input{
-  font-size: 1em;
+  margin-left: 5px;
+  color: #f8f8f8;
 }
 
-.app-container {
-  padding: 30px;
-}
-
-.filter-box {
+.functions-box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 20px;
   padding: 10px;
   color: #f8f8f8;
   background-color: #555;
 }
 
-.filter-box select {
+.functions-box select {
   margin-left: 5px;
   color: #f8f8f8;
   background-color: #777;
   border: none;
+}
+
+.filter-box {
+  padding-right: 20px;
 }
 
 .input-box {
@@ -31,23 +35,6 @@ input{
   margin-right: 20px;
   border: 0px;
   border-bottom: 1px solid;
-}
-
-.search-container {
-	text-align: center;
-	margin: 0px 8px 8px 8px;
-  font-size: 1.4em;
-  border: none;
-  cursor: pointer;
-}
-
-.search-bar {
-	width: 400px;
-  border: none;
-}
-
-.search-container button:hover {
-  background: #ccc;
 }
 
 .book-list {
@@ -113,17 +100,15 @@ input{
   padding-right: 2px;
   margin-top: 0px;
   margin-bottom: 6px;
-  font-size: 1.2em;
 }
 
 #main-box-title {
-  font-size: 1em;
   font-weight: bold;
 }
 
 /* The Modal (background) */
 .modal {
-	display: none; /* Hidden by default */
+	/* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
 	left: 0;
@@ -146,37 +131,6 @@ input{
 	display: table-cell;
 	position: relative;
 	vertical-align: middle;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  width: 10%;
-  padding: 50vh 50px 50vh 50px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-  z-index: 2;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #808080;
 }
 
 /* Modal Content (Image) */
@@ -216,8 +170,4 @@ input{
 @keyframes zoom {
 	from {opacity: 0;}
 	to {opacity: 1;}
-}
-
-.secretInfo {
-  display: none;
 }

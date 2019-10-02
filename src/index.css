@@ -5,7 +5,8 @@ html {
 }
 
 input{
-  margin-left: 5px;
+  margin-left: 0px;
+  padding-left: 0px;
   color: #f8f8f8;
 }
 
@@ -16,13 +17,14 @@ input{
   margin: 20px;
   padding: 10px;
   color: #f8f8f8;
-  background-color: #555;
 }
 
 .functions-box select {
-  margin-left: 5px;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-right: 5px;
   color: #f8f8f8;
-  background-color: #777;
+  background-color: rgba(85,85,85,0.2);
   border: none;
 }
 

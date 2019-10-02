@@ -30,7 +30,7 @@ const FilterBox = ({ filterType, setFilterType, filterInput, setFilterInput }) =
 
   return (
     <div className='filter-box'>
-      <p>Filter by
+      <p><b>Filter by </b>
         <select onChange={handleType}>
           <option value='author'>Author</option>
           <option value='title'>Title</option>
@@ -57,7 +57,7 @@ const SortBox = ({ sortDirection, setSort }) => {
 
   return (
     <div className='sort-box'>
-      <p>Sort by
+      <p><b>Sort by </b>
         <select onChange={handleChange}>
           <option value='yr-asc'>Year Published - Ascending</option>
           <option value='yr-dsc'>Year Published - Descending</option>

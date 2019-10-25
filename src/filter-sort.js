@@ -40,7 +40,7 @@ const FilterBox = ({ filterType, setFilterType, filterInput, setFilterInput }) =
         <input
           className='input-box'
           type="text"
-          placeholder='Filter query'
+          placeholder='Query'
           value={filterInput}
           onChange={handleInput}
           autoFocus
@@ -59,12 +59,12 @@ const SortBox = ({ sortDirection, setSort }) => {
     <div className='sort-box'>
       <p><b>Sort by </b>
         <select onChange={handleChange}>
-          <option value='yr-asc'>Year Published - Ascending</option>
-          <option value='yr-dsc'>Year Published - Descending</option>
-          <option value='rd-asc'>Year Read - Ascending</option>
-          <option value='rd-dsc'>Year Read - Descending</option>
-          <option value='gr-asc'>Grade - Ascending</option>
-          <option value='gr-dsc'>Grade - Descending</option>
+          <option value='rd-dsc'>Year Read (desc)</option>
+          <option value='rd-asc'>Year Read (asc)</option>
+          <option value='gr-dsc'>Rating (desc)</option>
+          <option value='gr-asc'>Rating (asc)</option>
+          <option value='yr-dsc'>Year Published (desc)</option>
+          <option value='yr-asc'>Year Published (asc)</option>
         </select>
       </p>
     </div>
